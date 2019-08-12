@@ -474,7 +474,7 @@ def backup_set_custom(env, target, target_user, target_pass, min_age):
 	config["min_age_in_days"] = min_age
 
 	write_backup_config(env, config)
-    
+  
 	# Validate.
 	try:
 		if config["target"] not in ("off", "local"):
